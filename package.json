@@ -1,5 +1,5 @@
 {
-  "name": "unit-converter",
+  "name": "unit-calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
