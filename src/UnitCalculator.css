@@ -1,0 +1,15 @@
+.unit-calculator {
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.unit-calculator__title {
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.unit-calculator__body {
+  padding: 10px;
+}

@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { unitDefs, UnitCalculator, ContextProvider as UnitCalculatorContextProvider } from './UnitCalculator';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UnitCalculatorContextProvider>
+        <UnitCalculator unitDef={unitDefs.milliMator} />
+        <UnitCalculator unitDef={unitDefs.microMator} />
+        <UnitCalculator unitDef={unitDefs.sun} />
+      </UnitCalculatorContextProvider>
     </div>
   );
 }
