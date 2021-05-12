@@ -27,10 +27,12 @@ export const unitDefs = {
 
 export const context = createContext({
   focusedUnit: null,
-  selected: {
+  setFocusedUnit: () => {},
+  calculationBase: {
     unit: null,
     num: null
   },
+  setCalculationBase: () => {},
   calculated: {
     milliMator: 0,
     microMator: 0
@@ -43,6 +45,7 @@ export function ContextProvider({ children }) {
   const [calculationBase, setCalculationBase] = useState(null);
   const [calculated, setCalculated] = useState(null);
 
+  // 換算元の単位と値が更新された時
   useEffect(() => {
 
     if (calculationBase) {
